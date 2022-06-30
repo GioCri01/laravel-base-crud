@@ -7,10 +7,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="{{route("comics.index") }}">Home</a>
+        <a class="nav-link active" aria-current="page" href="{{route("comics.index") }}">Comics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Features</a>
+            <a class="nav-link" href=" {{route("comics.create") }}">Inserisci nuovo Comics</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
