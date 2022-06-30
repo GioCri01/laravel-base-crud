@@ -2,7 +2,8 @@
 
 @section("content")
 <div class="container mt-5">
-    <form class="form-control" action="{{ route("comics.store") }}" method="POST">
+    <form class="form-control" action="{{ route("comics.update",$comics) }}" method="POST">
+        @method("PUT")
         @csrf
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Titolo Comics</label>
