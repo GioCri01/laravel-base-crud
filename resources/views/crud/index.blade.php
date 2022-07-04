@@ -12,7 +12,7 @@
 
 
         @foreach ($comics as $comic )
-            <div class="box">
+            <div class="box my-3">
                 <img src="{{ $comic->image }}" alt="{{ $comic->title }}">
                 <h2>{{ $comic->title }}</h2>
                 <h3>{{ $comic->type }}</h3>
