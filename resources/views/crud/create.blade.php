@@ -15,7 +15,7 @@
         @csrf
         <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Titolo Comics</label>
-            <input type="text" class="form-control @error("title") is-invalid @enderror"name="title" id="title"  placeholder="Titolo Comics">
+            <input type="text" class="form-control @error("title") is-invalid @enderror"name="title" id="title"  placeholder="Titolo Comics " value="{{ old("title") }}">
             @error("title")
                 <p class="text-danger">{{ $message }}</p>
             @enderror
@@ -23,14 +23,14 @@
           </div>
           <div class="mb-3">
             <label for="formGroupExampleInput2" class="form-label">URL Copertina Comics</label>
-            <input type="text" class="form-control @error("image") is-invalid @enderror" name="image"id="image" placeholder="URL Copertina Comics">
+            <input type="text" class="form-control @error("image") is-invalid @enderror" name="image"id="image" placeholder="URL Copertina Comics" value="{{ old("image") }}">
             @error("image")
                 <p class="text-danger">{{ $message }}</p>
             @enderror
           </div>
           <div class="mb-3">
             <label for="formGroupExampleInput2" class="form-label">Tipo Comics</label>
-            <input type="text" class="form-control @error("type") is-invalid @enderror" name="type"id="type" placeholder="Tipo Comics">
+            <input type="text" class="form-control @error("type") is-invalid @enderror" name="type"id="type" placeholder="Tipo Comics" value="{{ old("image") }}" >
             @error("type")
                 <p class="text-danger">{{ $message }}</p>
             @enderror

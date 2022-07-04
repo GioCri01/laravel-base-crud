@@ -37,6 +37,8 @@ class ComicRequest extends FormRequest
             "title.max"=> "il titolo non può  contenere più di :max caratteri",
             "title.min"=> "il titolo deve avere almeno :min caratteri",
             "image.required"=> "L'immagine è obbligatoria",
+            "image.max"=> "il'immagine non può  contenere più di :max caratteri",
+            "image.min"=> "il'immagine non può  contenere meno di :min caratteri",
             "type.required"=> "il tipo è obbligatorio",
             "type.max"=> "il type non può  contenere più di :max caratteri",
             "type.min"=> "il type deve avere almeno :min caratteri"
